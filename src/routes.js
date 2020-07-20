@@ -1,16 +1,17 @@
-const express = require('express');
+const express = require("express");
 const routes = express.Router();
-const handler = require('./calculation/scripts/handler');
+const { findPath } = require("./calculation/scripts/handler");
 
-routes.post('/generateMap', async (req,res) => {
-    const params = req.body;
-    try {
-        const answer = handler.findPath(params.origin,params.destination);
-        console.log(answer);
-        res.json(answer);
-    } catch (error) {
-        res.status(400).send(error.message);
-    }
+routes.post("/generateMap", (req, res) => {
+  const { origin, destination } = req.body;
+
+  try {
+    const answer = findPath(origin, destination);
+
+    return res.json(answer);
+  } catch (error) {
+    return res.status(400).send(error.message);
+  }
 });
 
 module.exports = routes;

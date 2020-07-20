@@ -1,167 +1,161 @@
 [
-    {
-        "name": "A",
-        "distances": [
-            { "pointName": "B", "pointDistance": 196 }
-        ],
-        "x": 30,
-        "y": 589
-    },
-    {
-        "name": "B",
-        "distances": [
-            { "pointName": "A", "pointDistance": 196 },
-            { "pointName": "C", "pointDistance": 60 },
-            { "pointName": "E", "pointDistance": 120 }
-        ],
-        "x": 226,
-        "y": 589
-    },
-    {
-        "name": "C",
-        "distances": [
-            { "pointName": "B", "pointDistance": 60 },
-            { "pointName": "F", "pointDistance": 120 }
-        ],
-        "x": 226,
-        "y": 649
-    },
-    {
-        "name": "D",
-        "distances": [
-            { "pointName": "E", "pointDistance": 210 },
-            { "pointName": "G", "pointDistance": 160 }
-        ],
-        "x": 346,
-        "y": 380
-    },
-    {
-        "name": "E",
-        "distances": [
-            { "pointName": "B", "pointDistance": 120 },
-            { "pointName": "F", "pointDistance": 60 },
-            { "pointName": "D", "pointDistance": 210 }
-        ],
-        "x": 346,
-        "y": 589
-    },
-    {
-        "name": "F",
-        "distances": [
-            { "pointName": "E", "pointDistance": 60 },
-            { "pointName": "C", "pointDistance": 120 }
-        ],
-        "x": 346,
-        "y": 649
-    },
-    {
-        "name": "G",
-        "distances": [
-            { "pointName": "D", "pointDistance": 160 },
-            { "pointName": "I", "pointDistance": 300 },
-            { "pointName": "L", "pointDistance": 130 }
-        ],
-        "x": 506,
-        "y": 380
-    },
-    {
-        "name": "I",
-        "distances": [
-            { "pointName": "G", "pointDistance": 300 },
-            { "pointName": "K", "pointDistance": 103 }
-        ],
-        "x": 506,
-        "y": 679
-    },
-    {
-        "name": "J",
-        "distances": [
-            { "pointName": "N", "pointDistance": 28 },
-            { "pointName": "K", "pointDistance": 95 }
-        ],
-        "x": 608,
-        "y": 585
-    },
-    {
-        "name": "K",
-        "distances": [
-            { "pointName": "I", "pointDistance": 103 },
-            { "pointName": "J", "pointDistance": 95 }
-        ],
-        "x": 608,
-        "y": 679
-    },
-    {
-        "name": "L",
-        "distances": [
-            { "pointName": "G", "pointDistance": 130 },
-            { "pointName": "M", "pointDistance": 40 }
-        ],
-        "x": 635,
-        "y": 380
-    },
-    {
-        "name": "M",
-        "distances": [
-            { "pointName": "N", "pointDistance": 167 },
-            { "pointName": "L", "pointDistance": 40 },
-            { "pointName": "P", "pointDistance": 65 }
-        ],
-        "x": 635,
-        "y": 420
-    },
-    {
-        "name": "N",
-        "distances": [
-            { "pointName": "M", "pointDistance": 167 },
-            { "pointName": "J", "pointDistance": 28 },
-            { "pointName": "S", "pointDistance": 98 }
-        ],
-        "x": 635,
-        "y": 585
-    },
-    {
-        "name": "O",
-        "distances": [
-            { "pointName": "P", "pointDistance": 108 }
-        ],
-        "x": 700,
-        "y": 313
-    },
-    {
-        "name": "P",
-        "distances": [
-            { "pointName": "O", "pointDistance": 108 },
-            { "pointName": "M", "pointDistance": 65 },
-            { "pointName": "Q", "pointDistance": 110 }
-        ],
-        "x": 700,
-        "y": 420
-    },
-    {
-        "name": "Q",
-        "distances": [
-            { "pointName": "R", "pointDistance": 33 },
-            { "pointName": "P", "pointDistance": 110 }
-        ],
-        "x": 700,
-        "y": 529
-    },
-    {
-        "name": "R",
-        "distances": [
-            { "pointName": "Q", "pointDistance": 33 },
-            { "pointName": "S", "pointDistance": 57 }
-        ],
-        "x": 732,
-        "y": 529
-    },
-    {
-        "name": "S",
-        "distances": [
-            { "pointName": "R", "pointDistance": 57 }
-        ],
-        "x": 732,
-        "y": 585
-    }
+  {
+    "name": "A",
+    "distances": [{ "pointName": "B", "pointDistance": 196 }],
+    "x": 30,
+    "y": 589
+  },
+  {
+    "name": "B",
+    "distances": [
+      { "pointName": "A", "pointDistance": 196 },
+      { "pointName": "C", "pointDistance": 60 },
+      { "pointName": "E", "pointDistance": 120 }
+    ],
+    "x": 226,
+    "y": 589
+  },
+  {
+    "name": "C",
+    "distances": [
+      { "pointName": "B", "pointDistance": 60 },
+      { "pointName": "F", "pointDistance": 120 }
+    ],
+    "x": 226,
+    "y": 649
+  },
+  {
+    "name": "D",
+    "distances": [
+      { "pointName": "E", "pointDistance": 210 },
+      { "pointName": "G", "pointDistance": 160 }
+    ],
+    "x": 346,
+    "y": 380
+  },
+  {
+    "name": "E",
+    "distances": [
+      { "pointName": "B", "pointDistance": 120 },
+      { "pointName": "F", "pointDistance": 60 },
+      { "pointName": "D", "pointDistance": 210 }
+    ],
+    "x": 346,
+    "y": 589
+  },
+  {
+    "name": "F",
+    "distances": [
+      { "pointName": "E", "pointDistance": 60 },
+      { "pointName": "C", "pointDistance": 120 }
+    ],
+    "x": 346,
+    "y": 649
+  },
+  {
+    "name": "G",
+    "distances": [
+      { "pointName": "D", "pointDistance": 160 },
+      { "pointName": "I", "pointDistance": 300 },
+      { "pointName": "L", "pointDistance": 130 }
+    ],
+    "x": 506,
+    "y": 380
+  },
+  {
+    "name": "I",
+    "distances": [
+      { "pointName": "G", "pointDistance": 300 },
+      { "pointName": "K", "pointDistance": 103 }
+    ],
+    "x": 506,
+    "y": 679
+  },
+  {
+    "name": "J",
+    "distances": [
+      { "pointName": "N", "pointDistance": 28 },
+      { "pointName": "K", "pointDistance": 95 }
+    ],
+    "x": 608,
+    "y": 585
+  },
+  {
+    "name": "K",
+    "distances": [
+      { "pointName": "I", "pointDistance": 103 },
+      { "pointName": "J", "pointDistance": 95 }
+    ],
+    "x": 608,
+    "y": 679
+  },
+  {
+    "name": "L",
+    "distances": [
+      { "pointName": "G", "pointDistance": 130 },
+      { "pointName": "M", "pointDistance": 40 }
+    ],
+    "x": 635,
+    "y": 380
+  },
+  {
+    "name": "M",
+    "distances": [
+      { "pointName": "N", "pointDistance": 167 },
+      { "pointName": "L", "pointDistance": 40 },
+      { "pointName": "P", "pointDistance": 65 }
+    ],
+    "x": 635,
+    "y": 420
+  },
+  {
+    "name": "N",
+    "distances": [
+      { "pointName": "M", "pointDistance": 167 },
+      { "pointName": "J", "pointDistance": 28 },
+      { "pointName": "S", "pointDistance": 98 }
+    ],
+    "x": 635,
+    "y": 585
+  },
+  {
+    "name": "O",
+    "distances": [{ "pointName": "P", "pointDistance": 108 }],
+    "x": 700,
+    "y": 313
+  },
+  {
+    "name": "P",
+    "distances": [
+      { "pointName": "O", "pointDistance": 108 },
+      { "pointName": "M", "pointDistance": 65 },
+      { "pointName": "Q", "pointDistance": 110 }
+    ],
+    "x": 700,
+    "y": 420
+  },
+  {
+    "name": "Q",
+    "distances": [
+      { "pointName": "R", "pointDistance": 33 },
+      { "pointName": "P", "pointDistance": 110 }
+    ],
+    "x": 700,
+    "y": 529
+  },
+  {
+    "name": "R",
+    "distances": [
+      { "pointName": "Q", "pointDistance": 33 },
+      { "pointName": "S", "pointDistance": 57 }
+    ],
+    "x": 732,
+    "y": 529
+  },
+  {
+    "name": "S",
+    "distances": [{ "pointName": "R", "pointDistance": 57 }],
+    "x": 732,
+    "y": 585
+  }
 ]

@@ -1,8 +1,9 @@
-const handler = require('../scripts/handler');
+const { findPath } = require("../scripts/handler");
 
 try {
-    const result = handler.findPath("ALPHA","CHARLIE");
-    console.log(result);
+  const result = findPath("ALPHA", "CHARLIE");
+
+  console.log(result);
 } catch (error) {
-    console.log(error);
+  console.log(error);
 }
