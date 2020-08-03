@@ -61,4 +61,8 @@ module.exports = {
 		});
 		return parsedResult;
 	},
+
+	getImageById(idImage) {
+
+	}
 };
