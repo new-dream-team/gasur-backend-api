@@ -1,40 +1,39 @@
 //index , show , store , update , destroy
-const ImageURL = require('../models/Image');
+const Image = require('../models/Image');
 const { update } = require('../models/Image');
 
 module.exports = {
 
     async store(req , res) {
         
-        const namee = req.body.name;
-        const urlImagee = req.body.urlImage;
+       
+        const {urlImage , name} = req.body;
 
-        const imagee = await ImageURL.create({name : namee , urlImage : urlImagee});        
-        return res.json(imagee);
+        const image = await Image.create({name : name , urlImage : urlImage});        
+        return res.json(image);
     },
 
     async showAll(req , res) {               
 
-        const imagee = await ImageURL.find({});      
-        return res.json(imagee);
+        const image = await Image.find({});      
+        return res.json(image);
     },
 
     async showById(req , res) {               
 
-        const imagee = await ImageURL.find({_id : req.query.id});      
-        return res.json(imagee);
+        const image = await Image.find({_id : req.query.id});      
+        return res.json(image);
     },
 
     async delete(req , res) {               
       
-        await ImageURL.deleteOne({_id : req.query.id});      
+        await Image.deleteOne({_id : req.query.id});      
         return res.json({mensagem : "deleted"});
     },
     async update(req , res) {
-        await ImageURL.updateOne({ _id: req.query.id }, { name: 'USS Enterprise' })
+
+        const {urlImage , name} = req.body;
+        await Image.updateOne({ _id: req.query.id }, { name: name , urlImage: urlImage })
         return res.json({mensagem: "atualized" })
-
     }
-
-
 }
