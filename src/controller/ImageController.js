@@ -1,6 +1,5 @@
 //index , show , store , update , destroy
 const Image = require('../models/Image').default;
-const { update } = require('../models/Image').default;
 
 module.exports = {
 
