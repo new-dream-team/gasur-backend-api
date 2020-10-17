@@ -1,8 +1,17 @@
 const mongoose = require("mongoose");
+const { Json } = require("./json");
 
 const ImageSchema = new mongoose.Schema({
     name: String,
-    urlImage: String
+    urlImage: String,
+    json : {
+        name : String,
+        distances: [{
+            pointName: String, pointDistance: Number}
+        ],
+        x: Number,
+        y: Number
+    }
 
 });
 

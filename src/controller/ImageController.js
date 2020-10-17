@@ -4,8 +4,8 @@ const Image = require('../models/Image');
 module.exports = {
 
     async store(req , res) {
-        const {urlImage , name} = req.body;
-        const image = await Image.create({name, urlImage});
+        const {urlImage , name , x ,y , json} = req.body;
+        const image = await Image.create({name, urlImage, x ,y , json});
         return res.json(image);
     },
 
@@ -25,8 +25,8 @@ module.exports = {
 		},
 
     async update(req , res) {
-        const {urlImage , name} = req.body;
-        await Image.updateOne({ _id: req.query.id }, {name , urlImage })
+        const {urlImage , name , x ,y , json} = req.body;
+        await Image.updateOne({ _id: req.query.id }, {name , urlImage , x ,y , json})
         return res.json({mensagem: "updated" })
     }
 }
