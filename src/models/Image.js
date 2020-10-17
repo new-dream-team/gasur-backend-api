@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { Json } = require("./json");
 
 const ImageSchema = new mongoose.Schema({
     name: String,
