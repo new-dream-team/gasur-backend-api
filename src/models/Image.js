@@ -4,15 +4,15 @@ const { Json } = require("./json");
 const ImageSchema = new mongoose.Schema({
     name: String,
     urlImage: String,
-    json : {
-        name : String,
+    json: [{
+        name: String,
         distances: [{
-            pointName: String, pointDistance: Number}
-        ],
+            pointName: String, pointDistance: Number
+        }],
         x: Number,
         y: Number
-    }
+    }]
 
 });
 
-module.exports = mongoose.model('Image' , ImageSchema)
+module.exports = mongoose.model('Image', ImageSchema)
