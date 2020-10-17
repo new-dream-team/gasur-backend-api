@@ -23,7 +23,7 @@ module.exports = {
 
     async showById(req , res) {
 			try {
-				const image = await Image.find({_id : req.query.id});
+				const image = await Image.findOne({_id : req.query.id});
         return res.json(image);
 			} catch ( error ) {
 				return res.status(400).json({message: "Invalid ID"});

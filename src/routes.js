@@ -2,18 +2,10 @@ const express = require('express');
 
 const routes = express.Router();
 const ImageController = require('./controller/ImageController')
-const handler = require('./calculation/scripts/handler');
+const NavigatorController = require('./controller/NavigatorController');
 
 
-routes.post('/generateMap', async (req, res) => {
-	const params = req.body;
-	try {
-		const answer = handler.findPath(params.origin, params.destination);
-		res.json(answer);
-	} catch (error) {
-		res.status(400).send(error.message);
-	}
-});
+routes.post('/generateMap', NavigatorController.calculateRoute);
 
 routes.post('/image',ImageController.store);
 routes.get('/image-all',ImageController.showAll);
