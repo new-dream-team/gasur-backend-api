@@ -1,14 +1,9 @@
-const fs = require('fs');
 const mapa = require('./utils.js');
 const djikstra = require('./djikstra');
 
-const RESOURCES_PATH = `${process.cwd()}/src/calculation/resources`;
-// const RESOURCES_PATH = '../resources';
 
 module.exports = {
-	findPath(origin, destination) {
-		const points = JSON.parse(fs.readFileSync(`${RESOURCES_PATH}/points.json`));
-		const poi = JSON.parse(fs.readFileSync(`${RESOURCES_PATH}/poi.json`));
+	findPath(origin, destination, poi, points) {
 
 		const startPoint = poi.find(item => {
 			return item.name === origin.toUpperCase();
