@@ -6,13 +6,13 @@ module.exports = {
 	findPath(origin, destination, poi, points) {
 
 		const startPoint = poi.find(item => {
-			return item.name === origin.toUpperCase();
+			return item.name.toUpperCase() === origin.toUpperCase();
 		});
 		if (startPoint == null) {
 			throw new Error('Origin not found');
 		}
 		const finishPoint = poi.find(item => {
-			return item.name === destination.toUpperCase();
+			return item.name.toUpperCase() === destination.toUpperCase();
 		});
 		if (finishPoint == null) {
 			throw new Error('Destination not found');
